@@ -5,7 +5,7 @@
 class Atrelease < Formula
   desc "Multi-agent release preparation team for multi-language repositories"
   homepage "https://github.com/agentplexus/agent-team-release"
-  version "0.6.0"
+  version "0.7.0"
   license "MIT"
 
   depends_on "gh"
@@ -13,16 +13,16 @@ class Atrelease < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agentplexus/agent-team-release/releases/download/v0.6.0/agent-team-release_0.6.0_darwin_x86_64.tar.gz"
-      sha256 "b7e2b426ab93eb2b6186f0ddd0b2d3bbaa336052052f34b19bfe75d44cc5e24c"
+      url "https://github.com/agentplexus/agent-team-release/releases/download/v0.7.0/agent-team-release_0.7.0_darwin_x86_64.tar.gz"
+      sha256 "59395d28d870b4d5ba63fe02c96d09d6cdb0a4e5fbcfdcf0db52ff21f4356405"
 
       def install
         bin.install "atrelease"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agentplexus/agent-team-release/releases/download/v0.6.0/agent-team-release_0.6.0_darwin_arm64.tar.gz"
-      sha256 "bb082e810c1d81105fd361109f752891a0019a56376c6eb06614d8e786ebd91b"
+      url "https://github.com/agentplexus/agent-team-release/releases/download/v0.7.0/agent-team-release_0.7.0_darwin_arm64.tar.gz"
+      sha256 "e0c3edbc3b4d7e708ebd6197f6a75787df294878a3b918d7c251a6ab49b7733d"
 
       def install
         bin.install "atrelease"
@@ -32,15 +32,15 @@ class Atrelease < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentplexus/agent-team-release/releases/download/v0.6.0/agent-team-release_0.6.0_linux_x86_64.tar.gz"
-      sha256 "726f20066074357c580e89a973f30f5d70973a76254b9c6c6fefed256d605ebd"
+      url "https://github.com/agentplexus/agent-team-release/releases/download/v0.7.0/agent-team-release_0.7.0_linux_x86_64.tar.gz"
+      sha256 "2b010b4fca521357167836fa3b539fa510a6a6a48beac86e3117ae75e24a91a0"
       def install
         bin.install "atrelease"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentplexus/agent-team-release/releases/download/v0.6.0/agent-team-release_0.6.0_linux_arm64.tar.gz"
-      sha256 "7bbc62ac313b92a0014f20859fbc84241c2f9d1e89b9afc2c7c38b3e306b5d82"
+      url "https://github.com/agentplexus/agent-team-release/releases/download/v0.7.0/agent-team-release_0.7.0_linux_arm64.tar.gz"
+      sha256 "f2b465dac8bf6f7e6dbe3701c76a242fb9b2c042b7b2a8bada3eb4a7282dbe11"
       def install
         bin.install "atrelease"
       end
